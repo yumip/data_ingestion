@@ -21,7 +21,6 @@ def loop_directory(directory: str):
 			value_list = read_dat(file_directory, value_list)
 
 	# copy_from		
-
 	copy_property_list(value_list)
 	## executemany
 	# insert_property_list(value_list)
