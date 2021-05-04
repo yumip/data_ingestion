@@ -4,7 +4,7 @@ from config import config
 
 def insert_property_list(property_list):
     # """ insert multiple vendors into the vendors table  """
-    sql = "INSERT INTO property (valuer_general_id, address, saleprice, saledate) values(%s,%s,%s,%s)"
+    sql = "INSERT INTO property (valuer_general_id, address, suburb, postcode, saleprice, saledate) values(%s,%s,%s,%s)"
     conn = None
     try:
         # read database configuration

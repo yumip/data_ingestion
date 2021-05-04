@@ -8,6 +8,8 @@ def create_table():
             property_id SERIAL PRIMARY KEY,
             valuer_general_id INTEGER NOT NULL,
             address VARCHAR(255) NOT NULL,
+            suburb VARCHAR(255) NOT NULL,
+            postcode INTEGER NOT NULL,
             saleprice INTEGER NOT NULL,
             saledate DATE NOT NULL
         )

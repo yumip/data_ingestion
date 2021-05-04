@@ -27,10 +27,12 @@ def read_dat(file_path, value_list):
             if line[0] == "B":
                 lineSplit = line.split(";")
                 property_id = lineSplit[2]
-                property_address = " ".join(lineSplit[5:11]).strip()
+                property_address = " ".join(lineSplit[5:9]).strip()
+                suburb = lineSplit[9]
+                postcode = lineSplit[10]
                 sale_price = lineSplit[15]
                 sale_date = lineSplit[13]
-                record = [property_id, property_address, sale_price, sale_date]
+                record = [property_id, property_address, suburb, postcode, sale_price, sale_date]
                 value_list.append(record)
     return value_list 
     # insert_property_list(value_list)
