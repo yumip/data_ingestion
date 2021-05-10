@@ -21,7 +21,7 @@ def copy_property_list(property_list):
             writer = csv.writer(csv_file_like_object, delimiter=';')
             writer.writerows(property_list)
             csv_file_like_object.seek(0)
-            cur.copy_from(csv_file_like_object, "property", sep=";", columns=(
+            cur.copy_from(csv_file_like_object, "property", sep=";", null='', columns=(
                 'valuer_general_id', 'address', 'suburb', 'postcode', 'saleprice', 'saledate'))
         # commit the changes to the database
         conn.commit()

@@ -6,12 +6,12 @@ def create_table():
     command = """
         CREATE TABLE property (
             property_id SERIAL PRIMARY KEY,
-            valuer_general_id INTEGER NOT NULL,
-            address VARCHAR(255) NOT NULL,
-            suburb VARCHAR(255) NOT NULL,
-            postcode INTEGER NOT NULL,
-            saleprice INTEGER NOT NULL,
-            saledate DATE NOT NULL
+            valuer_general_id INTEGER,
+            address VARCHAR(255),
+            suburb VARCHAR(255),
+            postcode INTEGER,
+            saleprice BIGINT,
+            saledate DATE
         )
         """
 
